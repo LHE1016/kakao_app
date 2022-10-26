@@ -1,0 +1,9 @@
+<div
+      style={{
+        backgroundImage: `url(${MyBackgroundImage})`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+        height: '500px',
+      }}
+    >

@@ -1,0 +1,80 @@
+/* chat.css */
+@import url(Common.scss);
+
+.tab > .tab_list > div:nth-child(2) .icon, .tab > .tab_list > div:nth-child(2) .text{
+    color: #513736;
+}
+
+.chats{
+    height: 85.8%; 
+    padding-top: 64px;
+
+    /* 검색창 */
+    .srch_box{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        min-height: 53px;
+        
+            .srch_inner{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 88%;
+            height: 50%;
+            background-color: #f1f2f4;
+            border-radius: 5px;
+        
+                svg{
+                font-size: 16px;
+                color: #bebcc1;
+                align-self: center;
+                margin-left: 15px;
+                }
+        
+                input{
+                    width: 90%;
+                    background: transparent;
+                    border: none;
+                    padding: 0 15px;
+        
+                    &::placeholder{ 
+                        text-align: center;
+                    }
+                }
+        
+        
+            }
+        }
+
+    /* floating action btn */
+    .chat_fa_btn{
+        position: fixed;
+        right: 20px;
+        bottom: 80px;
+
+        a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            background-color: #ffe84c;
+            border-radius: 50%;
+            box-shadow: 0 2px 6px #0004;
+            font-size: 18px;
+            color: #513736;
+            transition: color 150ms linear 0s, background 150ms linear 0s;
+        }
+        a:hover{
+            background-color:  #513736;
+            color: #ffe84c;
+        }
+    }
+
+}
+
+
+
